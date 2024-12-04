@@ -30,14 +30,6 @@ func main() {
 	_, diagonalCount := readDiagonal(sourceGrid)
 	_, reverseDiagonalCount := readReverseDiagonal(sourceGrid)
 
-	// for i, row := range acrossGrid {
-	// 	for j := range row {
-	// 		if !acrossGrid[i][j] && !downGrid[i][j] && !diagonalGrid[i][j] && !reverseDiagonalGrid[i][j] {
-	// 			sourceGrid[i][j] = '.'
-	// 		}
-	// 	}
-	// }
-
 	fmt.Println(acrossCount, downCount, diagonalCount, reverseDiagonalCount)
 	fmt.Println(acrossCount + downCount + diagonalCount + reverseDiagonalCount)
 
